@@ -1,7 +1,7 @@
 
 terraform {
   required_providers {
-    aws       = {
+    aws = {
       source  = "hashicorp/aws"
       version = ">= 3.19.1"
     }
@@ -11,9 +11,9 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-   region  = "us-east-1"
-   shared_credentials_file ="~/.aws/credentials"  //aws credentials home directory
-   profile = "terraform-user"
+  region                  = "us-east-1"
+  shared_credentials_file = "~/.aws/credentials" //aws credentials home directory
+  profile                 = "terraform-connect"
 }
 
 
